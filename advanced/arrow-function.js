@@ -22,9 +22,11 @@ const under30 = people.filter((person) => person.age < 30);
 
 console.log(under30);
 
-// find the person with age 22
+// find person with age 22
 // print that persons name
 
-const age22 = people.find( (person) => person.age === 22);
+const age22 = people.find((person) => {
+    return person.age === 22;
+});
 
 console.log(age22.name);
