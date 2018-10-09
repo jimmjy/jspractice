@@ -30,17 +30,11 @@ Hangman.prototype.getPuzzle = function () {
     return puzzle;
 };
 
-const game1 = new Hangman('cat', 2);
+Hangman.prototype.render = function (puzzleResult) {
+    const puzzle = document.getElementById('puzzle');
+    puzzle.textContent = puzzleResult;
 
-// Guess c, t, z
-// Print remaining guesses (should be 1)
-const game2 = new Hangman('New Jersey', 4);
-// Guess w, 
-game2.getPuzzle();
+    const guesses = document.getElementById('guesses');
+    guesses.textContent = `You have ${this.guesses} guesses left`;
+}
 
-window.addEventListener('keypress', function (e) {
-    const guess = String.fromCharCode(e.charCode);
-    game1.makeGuess(guess);
-    console.log(game1.getPuzzle());
-    console.log(game1.guesses);
-});
