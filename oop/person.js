@@ -37,12 +37,3 @@ class Employee extends Person {
     };
 };
 
-
-const me = new Employee('James', 'Finkelstein', 30, ['Biking', 'Coding'], 'Web Developer');
-me.setName('Alexis Turner');
-console.log(me.getBio());
-console.log(me.getYearsLeft());
-
-
-const person2 = new Person('Clancy', 'Turner', 51);
-console.log(person2.getBio());
