@@ -66,7 +66,7 @@ console.log(test);
 
 const me = new Employee('James', 'Fink', 30, ['reading'], 'Student');
 me.fullName = 'Caterina Gennero';
-console.log(me.getBio());
+console.log(me);
 
 // me.updateGrade(20);
 // console.log(me.getBio());
