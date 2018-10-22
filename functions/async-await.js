@@ -50,3 +50,23 @@
 // }
 
 // getCurrentCountry();
+
+// getCurrentCountry().then((country) => {
+//     console.log(country.name);
+// }).catch((err) => {
+//     console.log(err);
+// })
+
+// getLocation().then((location) => {
+//     return getCountry(location.country)
+// }).then((country) => {
+//     console.log(country.name);
+// }).catch((err) => {
+//     console.log(err);
+// });
+
+// getLocation().then((location) => {
+//     return getCountry(location);
+// }).then((country) => {
+//     console.log('test', country.name);
+// }).catch((err) => console.log('Error', err));
