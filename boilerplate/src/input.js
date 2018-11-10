@@ -1,14 +1,8 @@
-const name = 'Jen';
-console.log(name);
+import { add } from './utilities';
+import { scream as scr } from './scream';
 
-class Hangman {
-    myMethod() {
-        return 'Testing';
-    }
-}
+console.log('input.js');
 
-const me = new Hangman();
-console.log(me.myMethod());
+console.log(add(9, 4));
 
-const nameTwo = "james";
-console.log("is this working")
+console.log(scr('James'));
